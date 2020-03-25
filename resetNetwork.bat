@@ -1,5 +1,5 @@
 @echo off
-color 0a
+color 8f
 title Reset Network - DungGramer
 cls
 >nul 2>&1 "%SYSTEMROOT%\system32\cacls.exe" "%SYSTEMROOT%\system32\config\system"
