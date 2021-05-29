@@ -80,6 +80,7 @@ goto begin
 netsh winsock reset
 netsh int tcp set global chimney=enabled
 netsh int tcp set global autotuninglevel=normal
+netsh interface tcp set heuristics disabled
 netsh advfirewall firewall add rule name="StopThrottling" dir=in action=block remoteip=173.194.55.0/24,206.111.0.0/16 enable=yes
 pause
 cls
