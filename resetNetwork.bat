@@ -55,7 +55,10 @@ netsh advfirewall reset
 ipconfig /flushdns
 ipconfig /release
 ipconfig /renew
-call :dns
+# Reset NAT Driver service
+net stop winnat
+net start winnat
+# call :dns
 pause
 cls
 goto begin
